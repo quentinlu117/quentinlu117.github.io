@@ -299,7 +299,7 @@ button, .btn, .btn span {
   gap: 8px;
   transition: none !important;
   border: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .btn-s {
