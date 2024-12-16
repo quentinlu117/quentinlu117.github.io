@@ -454,7 +454,7 @@ button, .btn, .btn span {
   background-color: transparent;
   color: var(--button-button-text--outline);
 }
-.btn-neutral--outline svg, .btn-neutral--ghost svg {
+.btn-neutral--outline svg, .btn-neutral--ghost svg, .btn-close svg {
   color: var(--button-button-text--outline);
 }
 

@@ -83,6 +83,14 @@ p strong {
   font-weight: 300;
 }
 
+code {
+  background-color: var(--secondarybackground);
+  font-size: 0.75rem;
+  padding: 2px;
+  border: var(--stroke) solid var(--badge-badgeneutral--border);
+  border-radius: 4px;
+  color: var(--text-secondarytitle);
+}
 
 /* ————————————— TABLET TEXT STYLES ————————————————*/
 
@@ -120,7 +128,9 @@ p, .paragraph {
   font-size: 1rem;
   font-weight: 300;
 }
-
+code {
+  font-size: 0.875rem;
+}
 }
 
 /* ————————————— END TABLET ————————————————*/
@@ -891,7 +901,7 @@ margin-top: 100px;
   flex: 24%;
 }
 .project-probl, .project-img-split {
-  gap: 64px;
+  gap: 40px;
   flex-direction: row;
 }
 .project-probl .left {
@@ -913,7 +923,6 @@ margin-top: 100px;
 }
 
 }
-
 
 
 
