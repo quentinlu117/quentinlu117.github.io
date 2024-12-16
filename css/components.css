@@ -347,9 +347,9 @@ button, .btn, .btn span {
 
 .btn-close {
   position: fixed;
-  bottom: 24px;
+  bottom: 32px;
   z-index: 99;
-  padding: 12px;
+  padding: 14px;
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
     background: var(--backgroundblur);
