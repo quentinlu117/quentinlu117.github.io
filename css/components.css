@@ -52,10 +52,10 @@ body {
   --secondarybackground: var(--grey-50);
   --thirdbackground: var(--grey-100);
   --primarybackground: var(--orange-50);
-  --backgroundblur: rgba(247, 247, 247, 0.7680000286102295);
+  --backgroundblur: rgba(247, 247, 247, 0.72);
   --text-titles: var(--black);
   --text-secondarytitle: var(--grey-500);
-  --text-secondarytitle--transparent: rgba(0, 0, 0, 0.5600000023841858);
+  --text-secondarytitle--transparent: rgba(0, 0, 0, 0.5);
   --text-subtitles: var(--primary);
   --text-paragraphs: var(--grey-800);
   --text-links: var(--primary);
@@ -85,10 +85,10 @@ body.dark-theme {
   --secondarybackground: var(--grey-900);
   --thirdbackground: var(--grey-800);
   --primarybackground: var(--orange-900);
-  --backgroundblur: rgba(52, 51, 50, 0.7680000286102295);
+  --backgroundblur: rgba(52, 51, 50, 0.72);
   --text-titles: var(--white);
   --text-secondarytitle: var(--grey-500);
-  --text-secondarytitle--transparent: rgba(255, 255, 255, 0.5600000023841858);
+  --text-secondarytitle--transparent: rgba(255, 255, 255, 0.5);
   --text-subtitles: var(--primary);
   --text-paragraphs: var(--grey-200);
   --text-links: var(--primary);
@@ -123,10 +123,10 @@ body {
   --secondarybackground: var(--grey-900);
   --thirdbackground: var(--grey-800);
   --primarybackground: var(--orange-900);
-  --backgroundblur: rgba(52, 51, 50, 0.7680000286102295);
+  --backgroundblur: rgba(52, 51, 50, 0.72);
   --text-titles: var(--white);
   --text-secondarytitle: var(--grey-500);
-  --text-secondarytitle--transparent: rgba(255, 255, 255, 0.5600000023841858);
+  --text-secondarytitle--transparent: rgba(255, 255, 255, 0.5);
   --text-subtitles: var(--primary);
   --text-paragraphs: var(--grey-200);
   --text-links: var(--primary);
@@ -156,10 +156,10 @@ body.light-theme {
   --secondarybackground: var(--grey-50);
   --thirdbackground: var(--grey-100);
   --primarybackground: var(--orange-50);
-  --backgroundblur: rgba(247, 247, 247, 0.7680000286102295);
+  --backgroundblur: rgba(247, 247, 247, 0.72);
   --text-titles: var(--black);
   --text-secondarytitle: var(--grey-500);
-  --text-secondarytitle--transparent: rgba(0, 0, 0, 0.5600000023841858);
+  --text-secondarytitle--transparent: rgba(0, 0, 0, 0.5);
   --text-subtitles: var(--primary);
   --text-paragraphs: var(--grey-800);
   --text-links: var(--primary);
@@ -345,6 +345,16 @@ button, .btn, .btn span {
   height: 20px;
 }
 
+.btn-close {
+  position: fixed;
+  bottom: 24px;
+  z-index: 99;
+  padding: 12px;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+    background: var(--backgroundblur);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+}
 /* ——————————————— TABLETTE ——————————————— */
 
 @media (min-width: 768px) {
@@ -390,6 +400,11 @@ button, .btn, .btn span {
 .btn-l svg, .btn-xl svg .btn-icon svg {
   width: 24px;
   height: 24px;
+}
+
+.btn-close {
+  padding: 16px;
+  bottom: 48px;
 }
 
 }
